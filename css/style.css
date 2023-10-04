@@ -1,0 +1,38 @@
+.logInBody{
+    display: flex;
+    flex-direction: row;
+}
+.logInBody > div:nth-child(1) {
+    background-color: rgb(255, 221, 54); 
+    width: 60vw; 
+    height: 100vh;
+  }
+.logInBody > div:nth-child(2) {
+    background-color: rgb(9, 9, 11); 
+    width: 40vw; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+  }
+.logInBody > div:nth-child(2) > div{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+body{
+    margin: 0px;
+}
+html{
+    height: 100%;
+}
+
+.mi-textfield {
+    border: none; /* Quita todos los bordes */
+    border-bottom: 1px solid rgb(170, 170, 170); /* Añade solo el borde inferior */
+    background-color: transparent; /* Fondo transparente */
+    width: 18vw;
+    height: 4vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    /* Añade cualquier otro estilo deseado */
+  }
