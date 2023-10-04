@@ -4,32 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalsier.com</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
 
+    <!--Encabezado de la pagina-->
+    <header class="header">
+
+        <!--div para logo y elementos de autentificacion-->
+        <div class="headerDiv1">
+            <img src="logoOscuro.png">
+            
+            <div class="authLinksDiv">
+                <a href="login.html">Ingresa</a>
+                <a href="signUp.html">Crea tu cuenta</a>
+            </div>
+        </div>
         
-        <img src="logoOscuro.png" alt="">
-        
-        <a href="login.html">Ingresa</a>
-        <a href="signUp.html">Crea tu cuenta</a>
-        
-        <form>
-            <input type="search" placeholder="Todo lo que buscas, esta aqui...">
-        </form>
-        
-        <div class="notUnderline">
-            <a href="">Categorias</a>
-            <a href="">Ofertas</a>
-            <a href="">Volver a comprar</a>
-            <a href="">Ingresa tu ubicación</a>
+        <!--div para barra de busqueda y links-->
+        <div class="headerDiv2">
+            <form>
+                <input type="search" placeholder="Todo lo que buscas, esta aqui...">
+            </form>
+            
+            <div class="notUnderlineLinkDiv">
+                <a href="">Categorias</a>
+                <a href="">Ofertas</a>
+                <a href="">Volver a comprar</a>
+                <a href="">Ingresa tu ubicación</a>
+            </div>
         </div>
 
-        <img src="imagenPerfil.png" alt="">
-        <a href="">Tu cuenta</a>
+        <!--div para imagen de cuenta y link-->
+        <div class="profileDiv">
+            <img src="imagenPerfil.png">
+            <a href="">Tu cuenta</a>
+        </div>
 
-        <img src="carritoCompra.png" alt="">
+        <!--insertar div para controlar tamaño de imagen si es necesario-->
+        <img src="carritoCompra.png">
 
     </header>
+
+    <!--div para carrusel de imagenes-->
+    <div class="carouselDiv">
+        <img src="carouselImage1">
+        <img src="carouselImage2">
+        <img src="carouselImage3">
+    </div>
+
+    <!--div para todas las listas de productios/categorias/marcas-->
+    <div class="productsDiv">
+
+        <!--
+            *subTitleDiv
+            es para todos los contenedores 
+            de subtitulos y link "ver todas >"
+
+            *contentItemsDiv
+            es para todas las listas
+            de productos
+
+            *itemDiv
+            es para los cuadros donde se
+            muestran los productos
+
+            TODO:div para categorias y marcas
+
+            *laneDiv
+            es una linea de 1 pixel para separar
+            la imagen y el texto
+
+            *priceDiv
+            es para poner en un Row el precio y
+            el descuento
+        -->
+        <div class="subTitleDiv">
+            <h3>Ofertas</h3>
+            <a href="">Ver todas ></a>
+        </div>
+        
+        <div class="contentItemsDiv">
+            <div class="itemDiv">
+                <img src="product1.png">
+                <div id="laneDiv"></div>
+                <div class="priceDiv">
+                    <p>$money</p>
+                    <p>%OFF</p>
+                </div>
+
+                <p>Envio gratis</p>
+
+                <p>Nombre del producto1</p>
+
+            </div>
+
+            <div class="itemDiv">
+                <img src="product2.png">
+                <div id="laneDiv"></div>
+                <div class="priceDiv">
+                    <p>$money</p>
+                    <p>%OFF</p>
+                </div>
+
+                <p>Envio gratis</p>
+
+                <p>Nombre del producto2</p>
+
+            </div>
+        </div>
+
+        <div class="subTitleDiv"></div>
+        <div class="subTitleDiv"></div>
+        <div class="subTitleDiv"></div>
+        <div class="subTitleDiv"></div>
+    </div>
+
+    <!--pie de pagina-->
+    <footer>
+
+        <!--div para los link-->
+        <div class="footerLinksDiv">
+            <a href="">Trabaja con nosotros</a>
+            <a href="">Términos y condiciones</a>
+            <a href="">Cómo cuidamos tu privacidad</a>
+            <a href="">Accesibilidad</a>
+            <a href="">Ayuda</a>
+        </div>
+
+        <p>
+            Copyright © 1999-2023 El presente canal de instrucción o ambiente, es operado por DeRemate.Com de México, S. de R.L. de C.V. identificada bajo la marca comercial "Kalsier". 
+        </p>
+        
+        <!--div para poner el ultimo p y el logo en row-->
+        <div class="footerRowDiv">
+            <p>
+                Insurgentes Sur 1602 Piso 9 Suite 900, Crédito Constructor Benito Juarez, 03940 Ciudad de México, CDMX, Mexico
+            </p>
+
+            <img src="logoOscuro.png">
+        </div>
+
+    </footer>
+
 </body>
 </html>
