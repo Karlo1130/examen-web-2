@@ -1,3 +1,52 @@
+*{
+    font-family: 'Poppins';
+}
+
+a{
+    color: white;
+}
+
 html{
     height: 100%;
 }
+header{
+    width: 100%;
+    display: flex;
+    background-color: #09090B;
+    justify-content: space-around;
+    font-size: smaller;
+    padding: 10px;
+  
+
+}
+.imagen{
+    max-width: 110px;
+    max-height: 25px;
+}
+
+.imagen img{
+    width: 100%;
+    object-fit: contain;
+  
+    
+}
+
+.headerDiv2{
+
+    :nth-child(1){
+        width: 100%;
+        padding: 5px;
+     }
+}
+
+.notUnderlineLinkDiv a{
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+.notUnderlineLinkDiv{
+    :not(:last-child){
+        border-right: 1.5px solid white;
+    }
+}
+    
