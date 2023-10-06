@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del producto</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!--Encabezado de la pagina-->
+    <header class="header">
+
+        <!--div para logo y elementos de autentificacion-->
+        <div class="headerDiv1">
+
+            <div class="imagen">  
+                <a href="index.html"><img src="assets/img/logoBlanco.png"></a>
+            </div>
+            
+            <div class="authLinksDiv">
+                <a href="login.html">Ingresa</a>
+                <a href="signUp.html">Crea tu cuenta</a>
+            </div>
+        </div>
+        
+        <!--div para barra de busqueda y links-->
+        <div class="headerDiv2">
+            <form>
+                <input type="search" placeholder="Todo lo que buscas, esta aqui...">
+            </form>
+            
+            <div class="notUnderlineLinkDiv">
+                <a href="">Categorias</a>
+                <a href="">Ofertas</a>
+                <a href="">Volver a comprar</a>
+                <a href="">Ingresa tu ubicación</a>
+            </div>
+        </div>
+
+        <!--div para imagen de cuenta y link-->
+        <div class="profileDiv">
+            <img src="imagenPerfil.png">
+            <a href="">Tu cuenta</a>
+        </div>
+
+        <!--insertar div para controlar tamaño de imagen si es necesario-->
+        <a href="shoppingCart.html"><img src="carritoCompra.png"></a>
+
+    </header>
+
+    <!--div para la ruta de busqueda del producto-->
+    <div class="ruteDiv">Home>Electronica>Televisores</div>
+
+    <!--div para separar en izquierda y derecha imagenes,
+        calificacion y informacion, compra-->
+    <div class="productInformation">
+
+        <!--? agregar igual las reseñas de otros usuarios en el div??-->
+        <!--div para imagenes y calificacion-->
+        <div class="images&textDiv">
+            
+            <div class="imagenesDiv">
+
+                <!--div para el preview de las 
+                    imagenes(imagenes chiquitas)-->
+                <div class="imagePreviewDiv">
+                    <div class="whiteContainerDiv">
+                        <img src="producto1-1.png">
+                    </div>
+                    <div class="whiteContainerDiv">
+                        <img src="producto1-2.png">
+                    </div>
+                    <div class="whiteContainerDiv">
+                        <img src="producto1-3.png">
+                    </div>
+    
+                </div>
+    
+                <!--div para la imagen grande-->
+                <div class="imageDiv">
+                    <img src="producto1.png">
+                </div>
+            </div>
+    
+            <!--div para informacion y cantidad a comprar-->
+            <div class="textDiv">
+
+                <!--div para calificacion y estrellas-->
+                <div class="calificationDiv">
+                    <p>Calificación:</p>
+
+                    <!--?imagen o imagenes-->
+                    <img src="estrellas.png">
+                </div>
+
+                <p>Cantidad de productos</p>
+
+                <!--div para objetos a comprar-->
+                <div class="quantityDiv">
+                    <p>A comprar</p>
+
+                    <!--div para caja de numero de productos a comprar-->
+                    <!--*similar a la clase "itemsNumberDiv" de shopping_cart.html linea 69-->
+                    <div class="quantityContainerDiv">
+                        <p>1</p>
+                        <div class="VerticalLaneDiv"></div>
+
+                        <!--*blueP es global-->
+                        <p id="blueP">+</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+        <!--div para la informacion del producto y botones-->
+        <div class="information&buysDiv">
+
+            <h1>Nombre del Producto</h1>
+
+            <p id="normalPrice">$money</p>
+
+            <!--div para el precio y porcentaje descuento-->
+            <div class="price&off">
+                <p>$money</p>
+                <p>%OFF</p>
+            </div>
+
+            <p>en 15 x $533 sin interés</p>
+
+            <!--similar a blueP pero con fuente mas grande-->
+            <p id="blueP2">IVA incluido</p>
+
+            <a href="ningunSitio">Ver lso medios de pago</a>
+
+            <p>Disponibles: 32</p>
+
+            <form>
+                <input type="button" class="greenButton" value="Comprar ahora">
+                <input type="button" class="blueButton" value="Añadir al carrito">
+            </form>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
