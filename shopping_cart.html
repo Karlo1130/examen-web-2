@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f564a2b15b.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     
@@ -13,7 +17,9 @@
         <!--div para logo y elementos de autentificacion-->
         <div class="headerDiv1">
 
-            <a href="index.html"><img src="logoBlanco.png"></a>
+            <div class="imagen">  
+                <a href="index.html"><img src="assets/img/logoBlanco.png"></a>
+            </div>
             
             <div class="authLinksDiv">
                 <a href="login.html">Ingresa</a>
@@ -31,7 +37,8 @@
                 <a href="">Categorias</a>
                 <a href="">Ofertas</a>
                 <a href="">Volver a comprar</a>
-                <a href="">Ingresa tu ubicación</a>
+                <a href="">Ingresa tu ubicación  <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> </a> 
+                
             </div>
         </div>
 
@@ -41,8 +48,17 @@
             <a href="user_configuration.html">Tu cuenta</a>
         </div>
 
-        <!--insertar div para controlar tamaño de imagen si es necesario-->
-        <img src="carritoCompra.png">
+        <!--insertar div para controlar tamaño de image
+            n si es necesario-->
+        <div class="carrito">
+            
+            <a href="shoppingCart.html"> <svg width="25" height="20" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 32.375C8.8355 32.375 7.6875 33.411 7.6875 34.6875C7.6875 35.964 8.8355 37 10.25 37C11.6645 37 12.8125 35.964 12.8125 34.6875C12.8125 33.411 11.6645 32.375 10.25 32.375ZM10.25 35.4583C9.77903 35.4583 9.39583 35.1125 9.39583 34.6875C9.39583 34.2625 9.77903 33.9167 10.25 33.9167C10.721 33.9167 11.1042 34.2625 11.1042 34.6875C11.1042 35.1125 10.721 35.4583 10.25 35.4583ZM34.2201 32.375C32.8056 32.375 31.6576 33.411 31.6576 34.6875C31.6576 35.964 32.8056 37 34.2201 37C35.6346 37 36.7826 35.964 36.7826 34.6875C36.7826 33.411 35.6346 32.375 34.2201 32.375ZM34.2201 35.4583C33.7491 35.4583 33.3659 35.1125 33.3659 34.6875C33.3659 34.2625 33.7491 33.9167 34.2201 33.9167C34.691 33.9167 35.0742 34.2625 35.0742 34.6875C35.0742 35.1125 34.691 35.4583 34.2201 35.4583ZM41 6.16667L6.31838 3.04922C6.14456 2.37744 5.8519 1.63667 5.05442 1.05787C4.05996 0.336179 2.45381 0 0 0V1.54176C1.98743 1.54176 3.32773 1.78323 3.98383 2.25931C4.45982 2.60474 4.58645 3.0709 4.74885 3.79992L4.74628 3.8003L9.23621 26.3123C9.49385 27.7019 10.0043 28.7413 10.6553 29.4906C11.4291 30.3816 12.4423 30.8333 13.6667 30.8333H39.2917V29.2917H13.6667C13.162 29.2917 11.6235 29.3035 10.9174 26.0392L10.3378 23.1332L39.2917 18.5L41 6.16667ZM37.8599 17.1846L10.0353 21.6159L6.64723 4.62866L39.0916 7.57787L37.8599 17.1846Z" fill="white"/>
+                </svg>
+                </a>
+        </div>
+
+            
 
     </header>
 
