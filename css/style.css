@@ -2,6 +2,13 @@
     font-family: 'Poppins';
 }
 
+body{
+    margin:0;
+}
+.karlotonto{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 a{
     color: white;
 }
@@ -10,12 +17,16 @@ html{
     height: 100%;
 }
 header{
-    width: 100%;
+
+    width: calc(100%-10rem);
     display: flex;
     background-color: #09090B;
-    justify-content: space-around;
-    font-size: x-small;
-    padding: 0.7rem;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   
 
 }
@@ -34,13 +45,27 @@ header{
 }
 
 .headerDiv2 form input {
-    
+    outline: none;
+        border: 0;
         width: 100%;
         background-color: #09090B;
-        border: 1px solid white;
+        color: white;
+        
 }
 .headerDiv2 form{
-    padding-bottom: 1em;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+  padding-bottom: 1em;
+
+}
+.form button{
+    background-color: white;
+    border-radius: 0;
 }
 
 .notUnderlineLinkDiv  {
@@ -85,5 +110,15 @@ header{
 
 }
 
+.carrusel{
+    overflow: hidden;
+    display: flex;
+    max-width: 1300px;
+    max-height: 650px;
 
+}
+.carrusel img{
+    width: 100%;
+    object-fit: contain;
+}
     
