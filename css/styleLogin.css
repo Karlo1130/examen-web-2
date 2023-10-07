@@ -1,0 +1,45 @@
+.logInBody{
+  display: flex;
+  flex-direction: row;
+}
+/* .logInBody >{
+  
+}  TODO: hacer que el fontSize sea global*/
+.logInBody > div:nth-child(1) {
+  background-color: rgb(255, 221, 54); 
+  width: 60vw; 
+  height: 100vh;
+}
+.logInBody > div:nth-child(2) {
+  background-color: rgb(9, 9, 11); 
+  width: 40vw; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+}
+.logInBody > div:nth-child(2) > div{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding-top: 2.5vh;
+}
+body{
+  margin: 0px;
+}
+html{
+  height: 100%;
+}
+
+.mi-textfield {
+  border: none;
+  border-bottom: 3px solid rgb(170, 170, 170);
+  background-color: transparent; 
+  width: 18vw;
+  height: 6vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 28px;
+}
+.customButton{
+  background-color: rgb(25, 25, 29 ); width: 140px; height: 60px; border: 0px; border-radius: 1px; color: white; font-size: 20px;
+}
