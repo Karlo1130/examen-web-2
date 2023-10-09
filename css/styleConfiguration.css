@@ -1,67 +1,106 @@
-    body{
-        color: white;
-        background-color: #09090B;
+body{
+    color: white;
+    background-color: #09090B;
 
-    }
+}
 
-    #whiteLaneDiv{
-        height: 1px;
-        width: 100%;
+#whiteLaneDiv{
+    height: 1px;
+    width: 100%;
 
-        background-color: white ;
+    background-color: white ;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.containerDiv{
+    margin-left: 8rem;
+    margin-right: 6rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.containerDiv > a{
+    font-size: 1.2em;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+.grayDiv{
+
+    height: 7rem;
+
+    background-color: #19191D;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.imgAndTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgAndTitle > div{
+    margin-left: 2rem;
+}
+
+.imgAndTitle > img{
+    width: 3.5em;
+}
+
+.tittleAndSubTittleDiv > h2{            
+    margin-bottom: 0px;
+}
+
+.tittleAndSubTittleDiv > p{
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 1024px){
+    h1{
+
+        font-size: 1.8em;
+        text-align: center;
     }
 
     .containerDiv{
-        margin-left: 8rem;
-        margin-right: 6rem;
-
-        display: flex;
-        flex-direction: column;
-
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
     }
 
     .containerDiv > a{
-        font-size: 1.2em;
-        margin-top: 2rem;
-        text-align: end;
+        font-size: 1.1em;
+        
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        text-align: center;
     }
 
     .grayDiv{
-
-        height: 7rem;
-
-        background-color: #19191D;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 0.5rem;
-        margin-right: 2rem;
-        margin-bottom: 1.5rem;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
+        margin-right: 0;
     }
 
-    .imgAndTitle{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .tittleAndSubTittleDiv{
+        margin-right: 1rem  ;            
     }
-
-    .imgAndTitle > div{
-        margin-left: 2rem;
+    
+    .tittleAndSubTittleDiv > h2{            
+        font-size: 1.2em;
     }
-
-    .imgAndTitle > img{
-        width: 3.5em;
-    }
-
-    .tittleAndSubTittleDiv > h2{
-        margin-bottom: 0px;
-    }
-
-    .tittleAndSubTittleDiv > p{
-        margin-top: 0px;
-    }
+}
