@@ -12,13 +12,13 @@ div{
   display: flex;
   flex-direction: row;
   background-color: rgb(9, 9, 11);
-  width: 60vw;
+  width: 70vw;
   height: 100vh;
 }
 
 .logInBody>div:nth-child(2) {
   background-color: rgb(9, 9, 11);
-  width: 40vw;
+  width: 70vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,26 +41,27 @@ div{
 }
 .registerText1{
   font-size: 32px;
-  padding-top: 6vw !important;
+  padding-top: 0vw !important;
 }
 .loginText2{
-  font-size: 28px; 
-  padding-top: 10vh !important;
+  font-size: 24px; 
+  padding-top: 6vh !important;
 }
 .loginText3{
-  font-size: 28px; 
+  font-size: 24px; 
   text-decoration: underline white; 
   padding-top: 1vh;
+  text-align: center;
 }
 .mi-textfield {
   border: none;
   border-bottom: 3px solid rgb(170, 170, 170);
   background-color: transparent;
-  width: 24vw;
+  width: 20vw;
   height: 6vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  font-size: 28px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 24px;
 }
 
 .customButton {

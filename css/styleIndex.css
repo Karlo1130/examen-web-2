@@ -31,7 +31,7 @@
 }
 .whiteContainerDiv{
     width: 25%;
-    height: 25vw;
+    height: 28vw;
     padding: 1%;
     box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
 }
@@ -55,6 +55,24 @@
         color: #5ED779;
     }
     
+}
+.addToCarBtn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: #fff !important;
+    border: none;
+    border-radius: 4px;
+    cursor: auto;
+}
+.addToCarBtn > p{
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.addToCarBtn:hover {
+    background-color: #84fc8a;
 }
 .priceDiv p{
     margin: 0px;
