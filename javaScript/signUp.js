@@ -11,6 +11,7 @@ class User{
         this.password    = password;
         
         this.shoppingCart = [];
+        this.history = [];
     }
 }
 
@@ -18,6 +19,10 @@ usersList = [];
 
 function updateLocalStorage() {
     localStorage.setItem('usersList', JSON.stringify(usersList));
+}
+
+function saveUser(userStorage) {
+    localStorage.setItem('User', JSON.stringify(userStorage));
 }
 
 function addUser(){
@@ -57,11 +62,13 @@ function addUser(){
 
         usersList.push(user);
 
+        
+        saveUser(user)
         updateLocalStorage();
         alert('Cuenta correctamente registrada');
         window.location.href = "index.html";
     } else {
-        alert('Las contraseñas no coinciden');
+        alert('Las contraseÃ±as no coinciden');
     }
 
     console.log(usersList);

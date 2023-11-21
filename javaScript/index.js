@@ -19,19 +19,6 @@ function updateLocalStorage() {
     localStorage.setItem('User', JSON.stringify(user));
 }
 
-function addPhoneToShoppingCart(){
-    shoppingCartList = user.shoppingCart;
-
-    (shoppingCartList.includes('phone'))
-    ?alert('Este item ya se encuentra en tu carrito')
-    :shoppingCartList.push('phone');
-
-    updateLocalStorage()
-    console.log(shoppingCartList);
-}
-phoneButton.addEventListener('click', () => addPhoneToShoppingCart());
-
-
 function addItemToShoppingCart(item){
     shoppingCartList = user.shoppingCart;
 
@@ -48,4 +35,3 @@ shoesButton.addEventListener('click', () => addItemToShoppingCart('shoes'));
 televisionButton.addEventListener('click', () => addItemToShoppingCart('television'));
 blenderButton.addEventListener('click', () => addItemToShoppingCart('blender'));
 mattresButton.addEventListener('click', () => addItemToShoppingCart('mattres'));
-
