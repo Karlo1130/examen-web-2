@@ -1,0 +1,154 @@
+div{
+  color: white;
+}
+input{
+  color: white;
+}
+.logInBody {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logInBody>div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(9, 9, 11);
+  width: 70vw;
+  height: 100vh;
+}
+
+.logInBody>div:nth-child(2) {
+  background-color: rgb(9, 9, 11);
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logInBody>div:nth-child(2)>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5vh;
+}
+.loginUserImage{
+  padding-top: 6vh !important;
+}
+.loginUserImage > img{
+  width: 140px;
+}
+.loginText1{
+  font-size: 32px;
+}
+.registerText1{
+  font-size: 32px;
+  padding-top: 0vw !important;
+}
+.loginText2{
+  font-size: 24px; 
+  padding-top: 6vh !important;
+}
+.loginText3{
+  font-size: 24px; 
+  text-decoration: underline white; 
+  padding-top: 1vh;
+  text-align: center;
+}
+.mi-textfield {
+  border: none;
+  border-bottom: 3px solid rgb(170, 170, 170);
+  background-color: transparent;
+  width: 20vw;
+  height: 6vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 24px;
+}
+
+.customButton {
+  background-color: rgb(25, 25, 29);
+  width: 140px;
+  height: 60px;
+  border: 0px;
+  border-radius: 1px;
+  color: white;
+  font-size: 20px;
+}
+
+            /* ESTILO PARA MOVILES */
+  @media  (max-width: 768px){
+    .logInBody {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(255, 221, 54);
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .logInBody>div:nth-child(1) {
+      display: none;
+    }
+    .logInBody>div:nth-child(2) {
+      width: calc(280px + 10vw);
+      height: 94vh;
+      box-shadow: 1px 1px 11px rgba(25, 25, 29, 0.5);
+    }
+    .logInBody>div:nth-child(2)>div {
+      padding-top: 1.2vh;
+    }
+    .loginUserImage{
+      padding-top: 3vh !important;
+    }
+    .loginUserImage > img{
+      width: 80px;
+    }
+    .registerText1{
+      font-size: 24px;
+    }
+    .loginText1{
+      font-size: 24px;
+    }
+    .loginText2{
+      font-size: 20px; 
+      padding-top: 6vh !important;
+    }
+    .loginText3{
+      font-size: 20px; 
+      text-decoration: underline white; 
+      padding-top: 1vh;
+    }
+    .mi-textfield {
+      border: none;
+      border-bottom: 2px solid rgb(170, 170, 170);
+      background-color: transparent;
+      width: 240px;
+      height: 5vh;
+      margin-left: 3vw;
+      margin-right: 3vw;
+      font-size: 20px;
+    }
+    
+    .customButton {
+      background-color: rgb(25, 25, 29);
+      width: 140px;
+      height: 60px;
+      border: 0px;
+      border-radius: 1px;
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .loginUserImage{
+      padding-top: 12vh !important;
+    }
+    .logInBody>div:nth-child(2) {
+      width: 90vw;
+    }
+    .registerText1{
+      padding-top: 14vw !important;
+    }
+  }
