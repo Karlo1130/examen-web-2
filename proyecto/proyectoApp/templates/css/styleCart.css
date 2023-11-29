@@ -1,0 +1,246 @@
+.containerDiv{
+
+    padding-top: 1.8rem;
+    padding-right: 4rem;
+    padding-left:  4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.whiteContainerDiv{
+
+    padding: 1%;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;    
+}
+
+.shoppingItemDiv{
+
+    margin-left: 2rem;
+    
+    margin-bottom: 1rem;
+}
+
+.separatorDiv{
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.separatorDiv > img{
+    width:  6rem;
+    height: 6rem;
+    object-fit: contain;    
+    
+}
+
+.itemInfoDiv{
+
+    margin-right: 4rem;
+    margin-left: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topInfoDiv{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.topInfoDiv > p{
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.itemsNumberDiv{
+
+    margin-right: 2rem;
+    margin-left:  2rem;
+
+    padding: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-width: 1px;
+    border-color: #333333;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.itemsNumberDiv > p{
+    margin: 0;
+}
+
+#number{
+    margin-right: 16px;
+    margin-left: 16px;
+
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+#sign{
+    color: #0085FF;
+}
+
+.bottomInfoDiv{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+#redP{
+    color: #FF0000;
+}
+
+#VerticalLaneDiv{
+    height: 50% ;
+    width: 1px;
+
+    margin-right: 0.6rem;
+    margin-left:  0.6rem;
+
+    background-color: black;
+}
+
+#blueP{
+    color: #0085FF;
+}
+
+#resumeP{
+
+    font-size: 1.5em;
+
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    margin-left:  2rem;
+    margin-bottom: 0.5rem;
+
+    text-align: center;
+}
+
+.row2Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#laneDiv{
+    height: 1px;
+    width: 100%;
+
+    background-color: #CACACA;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form > input{
+    margin-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    padding-top:    1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left:  2rem;
+
+    font-size: 1.2em;
+
+    border-style: solid;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: #FFDD36;
+
+}
+
+.sepDiv{
+    width: 2rem;
+    height: 0px;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .whiteContainerDiv{
+        width: 90%;
+    }
+
+    .containerDiv{
+    
+        padding-left: 1rem;
+        padding-right: 1rem ;       
+        
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .shoppingItemDiv{
+        margin: 0   ;
+    }
+
+    .separatorDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .separatorDiv > img{
+
+        height: 250px;
+        width: 100%;
+
+        margin-bottom: 2rem;
+    }
+
+    .topInfoDiv{
+        flex-direction: column;
+    }
+
+    .itemInfoDiv{
+        margin: 0;
+
+    }
+
+    .itemsNumberDiv{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .topInfoDiv > p{
+        align-items: center;
+    }
+
+    .bottomInfoDiv{
+        justify-content: space-around;
+    }
+
+    .sepDiv{
+        width: 0px;
+        height: 2rem;
+    }
+    
+}
