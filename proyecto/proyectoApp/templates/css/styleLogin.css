@@ -10,6 +10,12 @@ input{
   width: 100vw;
   height: 100vh;
 }
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5vh;
+}
 
 .logInBody>div:nth-child(1) {
   display: flex;
@@ -26,13 +32,17 @@ input{
   display: flex;
   flex-direction: column;
 }
+.formSignUp{
+  display: flex; 
+  flex-direction: column;
+}
 
-.logInBody>div:nth-child(2)>div {
+/* .formSignUp>div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2.5vh;
-}
+} */
 .loginUserImage{
   padding-top: 6vh !important;
 }
@@ -66,7 +76,6 @@ input{
   margin-right: 2vw;
   font-size: 24px;
 }
-
 .customButton {
   background-color: rgb(25, 25, 29);
   width: 140px;

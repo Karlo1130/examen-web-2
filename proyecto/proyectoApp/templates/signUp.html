@@ -1,66 +1,70 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear cuenta</title>
-    <link rel="stylesheet" href="css/styleLogin.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/styleLogin.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="logInBody">
         <div>
             <div style="background-color: rgb(255, 221, 54); width: 1.2vw; height: 100vh;"> </div>
             <div>
-                <img style="height: 100vh; width: 49vw;" src="assets/img/kalsierAsset 1.png" alt="">
+                <img style="height: 100vh; width: 49vw;" src="{% static '/assets/img/kalsierAsset 1.png' %}" alt="">
             </div>
         </div>
         <div>
-                <div>
-                    <p class="registerText1">Registro</p>
-                </div>
+            <div>
+                <p class="registerText1">Registro</p>
+            </div>
+            <form action="/signUp/" method="post" class="formSignUp">
+                {% csrf_token %}
 
                 <div class="column">
-    <div>
-        <input type="text" class="mi-textfield" id="names" placeholder="Nombres">
-    </div>
-    <div>
-        <input type="text" class="mi-textfield" id="lastnames" placeholder="Apellidos">
-    </div>
-</div>
-<div class="column">
-    <div>
-        <input type="text" class="mi-textfield" id="email" placeholder="Email">
-    </div>
-    <div>
-        <input type="text" class="mi-textfield" id="phoneNumber" placeholder="Numero">
-    </div>
-</div>
-<div class="column">
-    <div>
-        <input type="text" class="mi-textfield" id="addres" placeholder="Direccion">
-    </div>
-    <div>
-        <input type="text" class="mi-textfield" id="password" placeholder="Password">
-    </div>
-</div>
-<div class="column">
-    <div>
-        <input style="visibility: hidden;" type="text" class="mi-textfield"  placeholder="Repetir password">
-    </div>
-    
-    <div>
-        <input type="text" class="mi-textfield" id="rPassword" placeholder="Repetir password">
-    </div>
-</div>
-
-                <div style="padding-top: 5vh;"><button class="customButton" id="button">Registrate</button></div>
-                <div class="loginText2">¿Ya tienes cuenta?</div>
-                <a href="login.html"><div class="loginText3">inicia sesión</div></a>
+                    <div>
+                        <input type="text" class="mi-textfield" id="names" placeholder="Nombres" name="Nombres">
+                    </div>
+                    <div>
+                        <input type="text" class="mi-textfield" id="lastnames" placeholder="Apellidos" name="Apellidos">
+                    </div>
+                </div>
+                <div class="column">
+                <div>
+                    <input type="text" class="mi-textfield" id="email" placeholder="Email" name="Email">
+                </div>
+                <div>
+                    <input type="text" class="mi-textfield" id="phoneNumber" placeholder="Numero" name="Numero">
+                </div>
             </div>
+            <div class="column">
+                <div>
+                    <input type="text" class="mi-textfield" id="addres" placeholder="Direccion" name="addres">
+                </div>
+                <div>
+                    <input type="text" class="mi-textfield" id="password" placeholder="Password" name="password">
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <input style="visibility: hidden;" type="text" class="mi-textfield" placeholder="Repetir password">
+                </div>
+                
+                <div>
+                    <input type="text" class="mi-textfield" id="rPassword" placeholder="Repetir password" name="RepetirPassword">
+                </div>
+            </div>
+            
+            <div style="padding-top: 5vh;"><input type="submit" class="customButton" id="button">Registrate</input></div>
+        </form>
+            <div class="loginText2">¿Ya tienes cuenta?</div>
+            <a href="{% url 'login' %}"><div class="loginText3">inicia sesión</div></a>
+        </div>
     </div>
 
-    <script src="javaScript/signUp.js"></script>
+    <script src="{% static 'javaScript/signUp.js' %}"></script>
 
     <!--
         TODO: cambiar input por enlace con aspecto de boton
@@ -70,6 +74,6 @@
     <!-- <form>
         <input type="button" value="Registrate">
     </form>
-    <a href="login.html">Inicia sesión</a> -->
+    <a href="{% url 'login' %}">Inicia sesión</a> -->
 </body>
 </html>
